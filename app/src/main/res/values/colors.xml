@@ -3,7 +3,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#F2F2F2</color>
     <color name="yellow">#FEDB4A</color>
-    <color name="dark_blue">#035AA6</color>
+    <color name="blue900">#035AA6</color>
+    <color name="blue600">#009FF1</color>
+    <color name="blue300">#4CC7FF</color>
     <color name="turquoise">#04D99D</color>
-    <color name="orange">#D95204</color>
+    <color name="orange900">#D95204</color>
+    <color name="orange600">#EF8A0A</color>
+    <color name="orange300">#F6B44F</color>
 </resources>
