@@ -10,10 +10,10 @@
         android:id="@+id/bsignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="63dp"
+        android:layout_marginTop="64dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="@color/white"
-        android:text="SIGN IN"
+        android:text="SIGN UP"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,8 +22,8 @@
         android:id="@+id/blog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="63dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@color/white"
         android:text="SIGN IN"
         android:textColor="@color/black"
@@ -33,26 +33,42 @@
     <LinearLayout
         android:id="@+id/linearlogin"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="271dp"
-        android:layout_marginBottom="221dp"
+        android:layout_height="160dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/blogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="150dp"
+        >
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
 
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name"
+                app:layout_constraintEnd_toEndOf="parent" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="80dp">
 
+            <EditText
+                android:id="@+id/editTextTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
@@ -60,12 +76,19 @@
         android:id="@+id/blogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="111dp"
+        android:layout_marginBottom="71dp"
         android:text="LOGIN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearlogin" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo_icono"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="140dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
