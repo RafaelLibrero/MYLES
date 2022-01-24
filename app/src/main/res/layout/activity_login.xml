@@ -13,7 +13,7 @@
         android:layout_marginTop="64dp"
         android:layout_marginEnd="64dp"
         android:backgroundTint="@color/white"
-        android:text="SIGN UP"
+        android:text="@string/sign_up"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,7 +25,7 @@
         android:layout_marginStart="64dp"
         android:layout_marginTop="64dp"
         android:backgroundTint="@color/white"
-        android:text="SIGN IN"
+        android:text="@string/sign_in"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -73,7 +73,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPassword"
-                android:hint="Password"/>
+                android:hint="@string/password"/>
             
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
