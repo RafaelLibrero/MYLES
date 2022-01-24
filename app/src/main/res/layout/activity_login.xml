@@ -58,7 +58,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:inputType="textPersonName"
-                android:hint="Name"
+                android:hint="@string/name"
                 />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -85,7 +85,7 @@
         android:layout_marginBottom="71dp"
         android:backgroundTint="@color/white"
         android:onClick="lanzar_main"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

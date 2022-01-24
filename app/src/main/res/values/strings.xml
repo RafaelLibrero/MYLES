@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MYLES</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
 </resources>
