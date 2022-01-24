@@ -16,7 +16,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        blogin = findViewById(R.id.bsignup);
+        blogin = findViewById(R.id.bregister);
         bsignup1 = findViewById(R.id.bsignup1);
 
         blogin.setOnClickListener(new View.OnClickListener() {

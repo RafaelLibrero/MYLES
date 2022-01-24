@@ -12,9 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
         android:layout_marginTop="64dp"
-        android:backgroundTint="@color/white"
         android:text="@string/sign_in"
-        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,9 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:layout_marginEnd="64dp"
-        android:backgroundTint="@color/white"
         android:text="@string/sign_up"
-        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -45,7 +41,7 @@
         android:layout_width="0dp"
         android:layout_height="160dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/bsignup"
+        app:layout_constraintBottom_toTopOf="@+id/bregister"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toTopOf="parent"
@@ -55,7 +51,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            app:layout_constraintBottom_toTopOf="@+id/bsignup"
+            app:layout_constraintBottom_toTopOf="@+id/bregister"
             app:layout_constraintEnd_toEndOf="@id/rightguide"
             app:layout_constraintStart_toStartOf="@id/leftguide"
             app:layout_constraintTop_toTopOf="parent"
@@ -89,7 +85,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/bsignup"
+        android:id="@+id/bregister"
         android:layout_marginBottom="70dp"
         android:text="@string/login"
         app:layout_constraintBottom_toBottomOf="parent"
