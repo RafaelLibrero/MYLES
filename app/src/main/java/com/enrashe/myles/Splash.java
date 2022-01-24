@@ -16,7 +16,7 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
 
         TextView fan2 = (TextView) findViewById(R.id.tv_anim);
-        Animation myanim2= AnimationUtils.loadAnimation(this, R.anim.splash_animation);
+        Animation myanim2= AnimationUtils.loadAnimation(this, R.anim.splash_animation2);
         fan2.startAnimation(myanim2);
 
     }
