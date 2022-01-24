@@ -8,13 +8,28 @@
     tools:context=".Splash">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/mylesplash"
+        android:id="@+id/imgvsplash"
+        android:layout_width="247dp"
+        android:layout_height="176dp"
+        android:src="@drawable/iconomyles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/tv_anim"
+        android:layout_width="43dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/bh93"
+        android:text="ES"
+        android:textColor="@color/yellow"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
 </androidx.constraintlayout.widget.ConstraintLayout>
