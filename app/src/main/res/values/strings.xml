@@ -2,4 +2,9 @@
     <string name="app_name">MYLES</string>
     <string name="login">Login</string>
     <string name="name">Name</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_in">Sign in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="register">register</string>
 </resources>
