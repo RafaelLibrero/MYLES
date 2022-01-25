@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/sign_in"
+        style="@style/button"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,6 +23,7 @@
         android:layout_marginTop="64dp"
         android:text="@string/sign_up"
         android:alpha="0.5"
+        style="@style/button"
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -100,6 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:text="@string/register"
+        style="@style/button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

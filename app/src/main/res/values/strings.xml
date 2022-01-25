@@ -7,4 +7,5 @@
     <string name="password">Password</string>
     <string name="email">Email</string>
     <string name="register">register</string>
+    <string name="es">ES</string>
 </resources>
