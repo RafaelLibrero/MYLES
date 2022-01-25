@@ -18,13 +18,13 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         openApp(true);
 
-        TextView fan2 = (TextView) findViewById(R.id.tv_anim);
+        TextView fan2 = findViewById(R.id.tv_anim);
         Animation myanim2 = AnimationUtils.loadAnimation(this, R.anim.splash_animation2);
         fan2.startAnimation(myanim2);
 
     }
     private void openApp(boolean locationPermission){
-        //Handler: hace q1ue se retrase una accion
+        //Handler: hace que se retrase una accion
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run(){
