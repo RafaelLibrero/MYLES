@@ -8,8 +8,6 @@
 
     <Button
         android:id="@+id/bsignin1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/sign_in"
         android:alpha="0.5"
@@ -19,8 +17,6 @@
 
     <Button
         android:id="@+id/bsignup1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/sign_up"
         style="@style/button"

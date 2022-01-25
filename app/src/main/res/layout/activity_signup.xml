@@ -8,8 +8,6 @@
 
     <Button
         android:id="@+id/bsignin2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/sign_in"
         style="@style/button"
@@ -18,8 +16,6 @@
 
     <Button
         android:id="@+id/bsignup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:text="@string/sign_up"
         android:alpha="0.5"
@@ -98,8 +94,6 @@
 
     <Button
         android:id="@+id/bregister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
         android:text="@string/register"
         style="@style/button"
