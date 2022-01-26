@@ -8,4 +8,9 @@
     <string name="email">Email</string>
     <string name="register">register</string>
     <string name="es">ES</string>
+    <string name="browse">Browse</string>
+    <string name="personal">Personal</string>
+    <string name="add">Add</string>
+    <string name="none">none</string>
+    <string name="likes">Likes</string>
 </resources>
