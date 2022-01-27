@@ -94,9 +94,9 @@
 
     <Button
         android:id="@+id/bregister"
-        android:layout_marginBottom="70dp"
-        android:text="@string/register"
         style="@style/button"
+        android:layout_marginBottom="64dp"
+        android:text="@string/register"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
