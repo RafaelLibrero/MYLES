@@ -15,4 +15,13 @@
         <item name="android:fontFamily">@font/varela</item>
         <item name="android:backgroundTint">@color/orange300</item>
     </style>
+
+    <style name="Theme.MYLES.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MYLES.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MYLES.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
