@@ -1,5 +1,6 @@
 package com.enrashe.myles;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -66,6 +67,8 @@ public class MainNavigation extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.likes:
                         item.setChecked(true);
+                        Intent intent= new Intent(MainNavigation.this,Eventos.class);
+                        startActivity(intent);
                         Toast.makeText(MainNavigation.this, "Likes clicked.", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView,item.getItemId());
                         viewPager.setCurrentItem(0);
