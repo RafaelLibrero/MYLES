@@ -1,7 +1,6 @@
 package com.enrashe.myles;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public class Datos_Eventos {
@@ -33,11 +32,11 @@ public class Datos_Eventos {
     }
 
     public String getTrasnporte() {
-        return Trasnporte;
+        return trasnporte;
     }
 
     public void setTrasnporte(String trasnporte) {
-        Trasnporte = trasnporte;
+        trasnporte = trasnporte;
     }
 
     public String getFecha() {
@@ -50,24 +49,14 @@ public class Datos_Eventos {
 
     private String descripcion;
     private String precio;
-    private String Trasnporte;
+    private String trasnporte;
     private String fecha;
 
     public Datos_Eventos(String titulo, String descripcion, String precio, String trasnporte, String fecha) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.precio = precio;
-        Trasnporte = trasnporte;
+        this.trasnporte = trasnporte;
         this.fecha = fecha;
-    }
-
-    private List<Datos_Eventos>datos_eventos;
-
-    private void initdata(){
-        datos_eventos=new ArrayList<>();
-
-        datos_eventos.add(new Datos_Eventos("Scaperoom","Se abre nuestro nuevo scaperoom de ultramarinos","Gratutita","Linea 11","2000-05-14"));
-        datos_eventos.add(new Datos_Eventos("Scaperoom","Se abre nuestro nuevo scaperoom de ultramarinos","Gratutita","Linea 11","2000-05-14"));
-        datos_eventos.add(new Datos_Eventos("Scaperoom","Se abre nuestro nuevo scaperoom de ultramarinos","Gratutita","Linea 11","2000-05-14"));
     }
 }
