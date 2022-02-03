@@ -1,8 +1,5 @@
 package com.enrashe.myles;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Datos_Eventos {
 
     private String titulo;
@@ -51,12 +48,13 @@ public class Datos_Eventos {
     private String precio;
     private String trasnporte;
     private String fecha;
-
-    public Datos_Eventos(String titulo, String descripcion, String precio, String trasnporte, String fecha) {
+    int idFoto;
+    public Datos_Eventos(int idFoto,String titulo, String descripcion, String precio, String trasnporte, String fecha) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.precio = precio;
         this.trasnporte = trasnporte;
         this.fecha = fecha;
+        this.idFoto=idFoto;
     }
 }

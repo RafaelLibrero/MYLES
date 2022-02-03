@@ -25,7 +25,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             cv = (CardView) itemView.findViewById(R.id.cv);
             personName = (TextView) view.findViewById(R.id.person_name);
             personAge = (TextView) view.findViewById(R.id.person_age);
-            //personPhoto = (ImageView) view.findViewById(R.id.person_photo);
+            personPhoto = (ImageView) view.findViewById(R.id.person_photo);
         }
 
     }
@@ -48,7 +48,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
         viewHolder.personName.setText(eventos.get(position).getTitulo());
         viewHolder.personAge.setText(eventos.get(position).getFecha());
-        //viewHolder.personPhoto.setImageResource(eventos.get(position));
+        viewHolder.personPhoto.setImageResource(eventos.get(position).idFoto);
     }
 
     @Override
