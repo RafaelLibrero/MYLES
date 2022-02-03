@@ -38,7 +38,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     List<Datos_Eventos> eventos;
 
-     Adapter(List<Datos_Eventos> eventos) {
+    Adapter(List<Datos_Eventos> eventos) {
         this.eventos = eventos;
     }
 

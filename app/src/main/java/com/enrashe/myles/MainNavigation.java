@@ -22,6 +22,7 @@ public class MainNavigation extends AppCompatActivity {
 
     private ActivityMainNavigationBinding binding;
     private MenuItem prevMenuItem;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,29 +68,29 @@ public class MainNavigation extends AppCompatActivity {
                 switch (item.getItemId()) {
                     case R.id.likes:
                         item.setChecked(true);
-                        Intent intent= new Intent(MainNavigation.this,Eventos.class);
+                        Intent intent = new Intent(MainNavigation.this, Eventos.class);
                         startActivity(intent);
                         Toast.makeText(MainNavigation.this, "Likes clicked.", Toast.LENGTH_SHORT).show();
-                        removeBadge(mybottomNavView,item.getItemId());
+                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(0);
                         break;
                     case R.id.add:
                         item.setChecked(true);
                         Toast.makeText(MainNavigation.this, "Add clicked.", Toast.LENGTH_SHORT).show();
-                        removeBadge(mybottomNavView,item.getItemId());
+                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(1);
                         break;
                     case R.id.browse:
                         item.setChecked(true);
                         Toast.makeText(MainNavigation.this, "Add clicked.", Toast.LENGTH_SHORT).show();
-                        removeBadge(mybottomNavView,item.getItemId());
+                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(2);
 
                         break;
                     case R.id.personal:
                         item.setChecked(true);
                         Toast.makeText(MainNavigation.this, "Add clicked.", Toast.LENGTH_SHORT).show();
-                        removeBadge(mybottomNavView,item.getItemId());
+                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(3);
                         break;
                 }
@@ -115,7 +116,7 @@ public class MainNavigation extends AppCompatActivity {
                     mybottomNavView.getMenu().getItem(0).setChecked(false);
 
                 mybottomNavView.getMenu().getItem(position).setChecked(true);
-                removeBadge(mybottomNavView,mybottomNavView.getMenu().getItem(position).getItemId());
+                removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
                 prevMenuItem = mybottomNavView.getMenu().getItem(position);
             }
 

@@ -12,7 +12,8 @@ import java.util.List;
 
 public class Eventos extends AppCompatActivity {
     private List<Datos_Eventos> eventos;
-    private  RecyclerView rv;
+    private RecyclerView rv;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,20 +33,21 @@ public class Eventos extends AppCompatActivity {
 
 
     }
-    private void initData(){
+
+    private void initData() {
         eventos = new ArrayList<>();
-        eventos.add(new Datos_Eventos(R.drawable.holly,"Holly run", "Esta tarde joven es tuya ¡Holly run!","Gratis","Linea 3 Metro","23/3/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.expo,"Exposición Planetario", "¡Sumergete en los confines del universo!","Gratias","Linea 6 de Metro","22/4/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.excursion,"Excursion al monte", "Día para ti con la mejor compañia, la naturaleza","Gratis","Atocha","1/05/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.holly,"Holly run", "Esta tarde joven es tuya ¡Holly run!","Gratis","Linea 3 Metro","23/3/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.expo,"Exposición Planetario", "¡Sumergete en los confines del universo!","Gratias","Linea 6 de Metro","22/4/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.excursion,"Excursion al monte", "Día para ti con la mejor compañia, la naturaleza","Gratis","Atocha","1/05/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.holly,"Holly run", "Esta tarde joven es tuya ¡Holly run!","Gratis","Linea 3 Metro","23/3/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.expo,"Exposición Planetario", "¡Sumergete en los confines del universo!","Gratias","Linea 6 de Metro","22/4/2022"));
-        eventos.add(new Datos_Eventos(R.drawable.excursion,"Excursion al monte", "Día para ti con la mejor compañia, la naturaleza","Gratis","Atocha","1/05/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.holly, "Holly run", "Esta tarde joven es tuya ¡Holly run!", "Gratis", "Linea 3 Metro", "23/3/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.expo, "Exposición Planetario", "¡Sumergete en los confines del universo!", "Gratias", "Linea 6 de Metro", "22/4/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.excursion, "Excursion al monte", "Día para ti con la mejor compañia, la naturaleza", "Gratis", "Atocha", "1/05/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.holly, "Holly run", "Esta tarde joven es tuya ¡Holly run!", "Gratis", "Linea 3 Metro", "23/3/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.expo, "Exposición Planetario", "¡Sumergete en los confines del universo!", "Gratias", "Linea 6 de Metro", "22/4/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.excursion, "Excursion al monte", "Día para ti con la mejor compañia, la naturaleza", "Gratis", "Atocha", "1/05/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.holly, "Holly run", "Esta tarde joven es tuya ¡Holly run!", "Gratis", "Linea 3 Metro", "23/3/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.expo, "Exposición Planetario", "¡Sumergete en los confines del universo!", "Gratias", "Linea 6 de Metro", "22/4/2022"));
+        eventos.add(new Datos_Eventos(R.drawable.excursion, "Excursion al monte", "Día para ti con la mejor compañia, la naturaleza", "Gratis", "Atocha", "1/05/2022"));
     }
 
-    private void initializeAdapter(){
+    private void initializeAdapter() {
         Adapter adapter = new Adapter(eventos);
         rv.setAdapter(adapter);
     }
