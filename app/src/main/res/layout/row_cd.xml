@@ -8,7 +8,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/cv"
         android:layout_width="match_parent"
-        android:layout_height="100dp">
+        android:layout_height="150dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:adjustViewBounds="true" />
 
             <TextView
-                android:id="@+id/person_name"
+                android:id="@+id/evento"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
@@ -30,11 +30,29 @@
                 android:textSize="30sp" />
 
             <TextView
-                android:id="@+id/person_age"
+                android:id="@+id/descripcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/person_name"
+                android:layout_below="@+id/evento"
                 android:layout_toRightOf="@+id/person_photo" />
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descripcion"
+                android:layout_toRightOf="@+id/person_photo" />
+            <TextView
+                android:id="@+id/transporte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/precio"
+                android:layout_toRightOf="@+id/person_photo" />
+            <TextView
+                android:id="@+id/fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transporte"
+                android:layout_toRightOf="@+id/precio" />
 
         </RelativeLayout>
 

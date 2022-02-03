@@ -16,15 +16,21 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private CardView cv;
-        private TextView personName;
-        private TextView personAge;
+        private TextView evento;
+        private TextView descripcion;
+        private TextView precio;
+        private TextView fecha;
+        private TextView transporte;
         private ImageView personPhoto;
 
         public ViewHolder(View view) {
             super(view);
             cv = (CardView) itemView.findViewById(R.id.cv);
-            personName = (TextView) view.findViewById(R.id.person_name);
-            personAge = (TextView) view.findViewById(R.id.person_age);
+            evento = (TextView) view.findViewById(R.id.evento);
+            descripcion = (TextView) view.findViewById(R.id.descripcion);
+            precio = (TextView) view.findViewById(R.id.precio);
+            transporte = (TextView) view.findViewById(R.id.transporte);
+            fecha = (TextView) view.findViewById(R.id.fecha);
             personPhoto = (ImageView) view.findViewById(R.id.person_photo);
         }
 
@@ -46,8 +52,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     // Replace the contents of a view (invoked by the layout manager)
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
-        viewHolder.personName.setText(eventos.get(position).getTitulo());
-        viewHolder.personAge.setText(eventos.get(position).getFecha());
+        viewHolder.evento.setText(eventos.get(position).getTitulo());
+        viewHolder.descripcion.setText(eventos.get(position).getDescripcion());
+        viewHolder.precio.setText(eventos.get(position).getPrecio());
+        viewHolder.transporte.setText(eventos.get(position).getTrasnporte());
+        viewHolder.fecha.setText(eventos.get(position).getFecha());
         viewHolder.personPhoto.setImageResource(eventos.get(position).idFoto);
     }
 

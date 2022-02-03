@@ -2,8 +2,6 @@ package com.enrashe.myles;
 
 public class Datos_Eventos {
 
-    private String titulo;
-
     public String getTitulo() {
         return titulo;
     }
@@ -33,7 +31,7 @@ public class Datos_Eventos {
     }
 
     public void setTrasnporte(String trasnporte) {
-        trasnporte = trasnporte;
+        this.trasnporte = trasnporte;
     }
 
     public String getFecha() {
@@ -44,17 +42,20 @@ public class Datos_Eventos {
         this.fecha = fecha;
     }
 
+    private String titulo;
     private String descripcion;
     private String precio;
     private String trasnporte;
     private String fecha;
     int idFoto;
-    public Datos_Eventos(int idFoto,String titulo, String descripcion, String precio, String trasnporte, String fecha) {
+
+
+    public Datos_Eventos(int idFoto, String titulo, String descripcion, String precio, String trasnporte, String fecha) {
         this.titulo = titulo;
         this.descripcion = descripcion;
         this.precio = precio;
         this.trasnporte = trasnporte;
         this.fecha = fecha;
-        this.idFoto=idFoto;
+        this.idFoto = idFoto;
     }
 }
