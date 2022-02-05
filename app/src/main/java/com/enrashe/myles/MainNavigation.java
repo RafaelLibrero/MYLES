@@ -66,17 +66,17 @@ public class MainNavigation extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
-                    case R.id.likes:
+                    case R.id.eventos:
                         item.setChecked(true);
                         Intent intent = new Intent(MainNavigation.this, Eventos.class);
                         startActivity(intent);
-                        Toast.makeText(MainNavigation.this, "Likes clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainNavigation.this, "Eventos", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(0);
                         break;
                     case R.id.add:
                         item.setChecked(true);
-                        Toast.makeText(MainNavigation.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainNavigation.this, "Me gusta", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(1);
                         break;

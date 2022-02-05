@@ -22,4 +22,6 @@
     <string name="title_activity_main_navigation">MainNavigation</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
+    <string name="eventos">eventos</string>
+    <string name="me_gusta">Me gusta</string>
 </resources>

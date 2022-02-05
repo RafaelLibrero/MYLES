@@ -3,17 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/likes"
+        android:id="@+id/eventos"
         android:contentDescription="@string/none"
         android:icon="@drawable/iconomyles"
-        android:title="@string/likes"
+        android:title="@string/eventos"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/add"
         android:contentDescription="@string/none"
-        android:icon="@drawable/ic_baseline_menu_24"
-        android:title="@string/add"
+        android:icon="@drawable/favoritos"
+        android:title="@string/me_gusta"
         app:showAsAction="always" />
 
     <item
