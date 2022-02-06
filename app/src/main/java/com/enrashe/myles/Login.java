@@ -1,39 +1,33 @@
 package com.enrashe.myles;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import com.google.android.material.tabs.TabLayout;
 
 public class Login extends AppCompatActivity {
 
-    private Button blogin,bsignup1;
+    TabLayout tabLayout;
+    ViewPager viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        blogin = findViewById(R.id.bregister);
-        bsignup1 = findViewById(R.id.bsignup1);
+        tabLayout = findViewById(R.id.tab_layout);
+        viewPager = findViewById(R.id.view_pager);
 
-        blogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        tabLayout.addTab(tabLayout.newTab().setText("Login"));
+        tabLayout.addTab(tabLayout.newTab().setText("Signup"));
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        bsignup1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Signup.class);
-                startActivity(intent);
-            }
-        });
+        final LoginAdapter adapter =
+                new LoginAdapter(getSupportFragmentManager(),this,tabLayout.getTabCount());
+        viewPager.setAdapter(adapter);
 
+        viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }
 }
