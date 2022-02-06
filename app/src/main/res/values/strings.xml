@@ -8,4 +8,7 @@
     <string name="email">Email</string>
     <string name="register">register</string>
     <string name="es">ES</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="username">Username</string>
+    <string name="repeat_password">Repeat password</string>
 </resources>
