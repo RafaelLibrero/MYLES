@@ -79,9 +79,9 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/blogin"
+        android:id="@+id/bsignup"
         android:layout_marginBottom="70dp"
-        android:text="@string/register"
+        android:text="@string/signup"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
