@@ -23,11 +23,12 @@ public class Splash extends AppCompatActivity {
         fan2.startAnimation(myanim2);
 
     }
-    private void openApp(boolean locationPermission){
+
+    private void openApp(boolean locationPermission) {
         //Handler: hace que se retrase una accion
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
-            public void run(){
+            public void run() {
                 Intent intent = new Intent(Splash.this, Login.class);
                 startActivity(intent);
             }
