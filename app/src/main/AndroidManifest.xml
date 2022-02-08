@@ -15,9 +15,6 @@
             android:label="@string/title_activity_main_navigation"
             android:theme="@style/Theme.MYLES.NoActionBar" />
         <activity
-            android:name=".Signup"
-            android:exported="true" />
-        <activity
             android:name=".Splash"
             android:exported="true">
             <intent-filter>
@@ -31,8 +28,8 @@
             android:exported="true" />
         <activity
             android:name=".Eventos"
-            android:theme="@style/Theme.AppCompat.DayNight"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight" />
     </application>
 
 </manifest>
