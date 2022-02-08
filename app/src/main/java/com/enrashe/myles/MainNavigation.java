@@ -57,8 +57,8 @@ public class MainNavigation extends AppCompatActivity {
         View v = bottomNavigationMenuView.getChildAt(2);
         BottomNavigationItemView itemView = (BottomNavigationItemView) v;
 
-        LayoutInflater.from(this)
-                .inflate(R.layout.activity_splash, itemView, true);
+        //LayoutInflater.from(this)
+        //        .inflate(R.layout.activity_splash, itemView, true);
 
 
         mybottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
