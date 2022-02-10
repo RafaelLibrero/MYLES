@@ -15,6 +15,23 @@
         <item name="android:fontFamily">@font/varela</item>
         <item name="android:backgroundTint">@color/orange300</item>
     </style>
+    <style name="Theme.MYLES.eventos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/navyblue</item>
+        <item name="colorPrimaryVariant">@color/orange900</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/orange900</item>
+        <item name="colorSecondaryVariant">@color/orange600</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/varela</item>
+        <item name="android:textColor">@color/navyblue</item>
+        <item name="android:backgroundTint">@color/orange600</item>
+        <item name="cornerRadius">25dp</item>
+    </style>
 
     <style name="Theme.MYLES.NoActionBar">
         <item name="windowActionBar">false</item>

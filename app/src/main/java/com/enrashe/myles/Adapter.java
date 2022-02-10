@@ -6,6 +6,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
@@ -58,6 +59,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         viewHolder.transporte.setText(eventos.get(position).getTrasnporte());
         viewHolder.fecha.setText(eventos.get(position).getFecha());
         viewHolder.personPhoto.setImageResource(eventos.get(position).idFoto);
+
     }
 
     @Override
