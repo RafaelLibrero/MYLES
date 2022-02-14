@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">iniciar sesión</string>
+    <string name="name">nombre</string>
+    <string name="signup">registrarse</string>
+    <string name="sign_in">entrar</string>
+    <string name="password">contraseña</string>
+    <string name="email">correo electrónico</string>
+    <string name="register">reg</string>
+    <string name="forgot_password">Olvidaste tu contraseña?</string>
+    <string name="username">usuario</string>
+    <string name="repeat_password">repita contraseña</string>
+    <string name="browse">explorar</string>
+    <string name="add">añadir</string>
+</resources>
