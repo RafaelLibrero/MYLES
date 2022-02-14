@@ -7,11 +7,31 @@
         <entry key="..\:/Users/am7dam2/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_main.xml" value="0.190625" />
         <entry key="..\:/Users/am7dam2/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/drawable/login.xml" value="0.1405" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/activity_cardview.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/activity_eventos.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/activity_main_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/fragment_main_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/fragment_page1.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/fragment_page2.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/fragment_page3.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/fragment_page4.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/login_tab_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/row_cd.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-land/signup_tab_fragment.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout-sw600dp/fragment_main_navigation.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_cardview.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_eventos.xml" value="0.11458333333333333" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_main_navigation.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/activity_splash.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/fragment_main_navigation.xml" value="0.1" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/fragment_page1.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/fragment_page2.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/fragment_page3.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/fragment_page4.xml" value="0.11458333333333333" />
+        <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/layout.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/login_tab_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/row_cd.xml" value="0.1" />
         <entry key="..\:/Users/kiketazo/AndroidStudioProjects/MYLES/app/src/main/res/layout/signup_tab_fragment.xml" value="0.12183383991894631" />
