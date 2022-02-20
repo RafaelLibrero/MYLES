@@ -4,8 +4,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til1"
         android:layout_width="0dp"
@@ -14,7 +12,7 @@
         app:layout_constraintEnd_toEndOf="@id/rightguide"
         app:layout_constraintStart_toStartOf="@id/leftguide"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".5">
+        app:layout_constraintVertical_bias=".34">
 
         <EditText
             android:id="@+id/editTextTextPersonName"
@@ -58,7 +56,7 @@
         app:layout_constraintVertical_bias="0"
         android:layout_marginTop="5dp"/>
 
-    <Button
+    d<Button
         android:id="@+id/blogin"
         android:layout_marginBottom="70dp"
         android:text="@string/login"
