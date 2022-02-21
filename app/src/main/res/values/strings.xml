@@ -27,4 +27,5 @@
     <string name="tab_text_2" translatable="false">Tab 2</string>
     <string name="eventos" translatable="false">eventos</string>
     <string name="me_gusta" translatable="false">Me gusta</string>
+    <string name="welcome_to_myles">Welcome to MYLES!</string>
 </resources>
