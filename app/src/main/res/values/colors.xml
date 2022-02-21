@@ -10,6 +10,7 @@
     <color name="orange900">#D95204</color>
     <color name="orange600">#EF8A0A</color>
     <color name="orange300">#F6B44F</color>
+    <color name="orange900A30">#F4CBB3</color>
     <color name="gray">#607d8b</color>
     <color name="navyblue">#252440</color>
 </resources>
