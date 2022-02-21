@@ -1,14 +1,12 @@
 package com.enrashe.myles;
 
 import android.graphics.Color;
-import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import androidx.annotation.ColorInt;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
@@ -79,7 +77,9 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
     public void generarColor(CardView cv){
         Random rnd = new Random();
-        int color = Color.argb(255, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
+
+
+        int color = Color.argb(190, rnd.nextInt(256), rnd.nextInt(256), rnd.nextInt(256));
         cv.setCardBackgroundColor(color);
 
     }

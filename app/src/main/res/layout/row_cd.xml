@@ -15,9 +15,6 @@
             android:id="@+id/person_photo"
             android:layout_width="100dp"
             android:layout_height="150dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginBottom="5dp"
-            android:layout_marginLeft="5dp"
             android:scaleType="centerCrop" />
 
         <TextView
@@ -31,38 +28,49 @@
             android:layout_marginLeft="10dp" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:text="Small Text"
             android:id="@+id/descripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/evento"
-            android:layout_alignLeft="@+id/evento" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignLeft="@+id/evento"
             android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/descripcion"
-            android:layout_alignLeft="@+id/descripcion" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignLeft="@+id/descripcion"
             android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/transporte"
-            android:layout_below="@+id/precio"
-            android:layout_alignLeft="@+id/precio" />
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_below="@+id/precio"
+            android:layout_alignLeft="@+id/precio"
             android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/transporte"
-            android:layout_alignLeft="@+id/transporte" />
-        <View
+            android:layout_alignLeft="@+id/transporte"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <!--<View
             android:layout_width="wrap_content"
             android:layout_height="1dp"
             android:background="#ffd5d5d5"
@@ -70,7 +78,7 @@
             android:layout_above="@+id/compartir"
             android:layout_toRightOf="@+id/person_photo">
 
-        </View>
+        </View>-->
 
         <ImageView
             android:layout_width="wrap_content"

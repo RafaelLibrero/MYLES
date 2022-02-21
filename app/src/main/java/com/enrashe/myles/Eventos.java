@@ -1,7 +1,6 @@
 package com.enrashe.myles;
 
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
