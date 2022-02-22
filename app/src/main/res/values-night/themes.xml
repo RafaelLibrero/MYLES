@@ -1,13 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MYLES" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MYLES.Login" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">#3F5063</item>
         <!--#366666-->
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/blue600</item>
+        <item name="colorSecondary">@color/orange600</item>
         <item name="colorSecondaryVariant">#5F7996</item>
         <!--#519999-->
         <item name="colorOnSecondary">@color/black</item>
