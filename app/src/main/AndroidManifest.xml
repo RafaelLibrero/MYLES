@@ -9,14 +9,9 @@
         android:supportsRtl="true"
         android:fontFamily="@font/varela">
         <activity
-            android:name=".MainNavigation"
-            android:exported="false"
-            android:label="@string/title_activity_main_navigation"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
-        <activity
             android:name=".Splash"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            android:theme="@style/Theme.MYLES.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,6 +22,11 @@
             android:name=".Login"
             android:exported="true"
             android:theme="@style/Theme.MYLES.Login"/>
+        <activity
+            android:name=".MainNavigation"
+            android:exported="false"
+            android:label="@string/title_activity_main_navigation"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".Eventos"
             android:exported="true"
