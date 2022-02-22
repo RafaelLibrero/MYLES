@@ -54,9 +54,9 @@
         app:layout_constraintTop_toBottomOf="@id/til2"
         app:layout_constraintHorizontal_bias="1"
         app:layout_constraintVertical_bias="0"
-        android:layout_marginTop="5dp"/>
+        android:layout_marginTop="5dp" />
 
-    d<Button
+    <Button
         android:id="@+id/blogin"
         android:layout_marginBottom="70dp"
         android:text="@string/login"
