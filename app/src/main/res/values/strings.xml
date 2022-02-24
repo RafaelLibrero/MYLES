@@ -28,4 +28,5 @@
     <string name="eventos" translatable="false">eventos</string>
     <string name="me_gusta" translatable="false">Me gusta</string>
     <string name="welcome_to_myles">Welcome to MYLES!</string>
+    <string name="title_activity_maps">MapsActivity</string>
 </resources>

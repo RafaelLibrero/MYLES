@@ -82,7 +82,8 @@ public class MainNavigation extends AppCompatActivity {
                         break;
                     case R.id.browse:
                         item.setChecked(true);
-                        Toast.makeText(MainNavigation.this, "Add clicked.", Toast.LENGTH_SHORT).show();
+                        Intent intent2 = new Intent(MainNavigation.this, MapsActivity.class);
+                        startActivity(intent2);
                         removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(2);
 
