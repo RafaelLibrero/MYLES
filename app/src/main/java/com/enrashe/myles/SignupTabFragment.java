@@ -48,23 +48,23 @@ public class SignupTabFragment extends Fragment {
         String pass = password.getText().toString().trim();
         String repeatPass = repeatPassword.getText().toString().trim();
         if (user.isEmpty()){
-            username.setError("Username can not be empty");
+            username.setError("");
         }
         if (mail.isEmpty()){
-            email.setError("Email can not be empty");
+            email.setError("");
         }
         if (pass.isEmpty()){
-            password.setError("Password can not be empty");
+            password.setError("");
         }
         if (repeatPass.isEmpty()){
-            repeatPassword.setError("Repeat password can not be empty");
+            repeatPassword.setError("");
         }
         else{
             mAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
-                        Toast.makeText(getActivity(),"Successful register",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(),"Successfully registered",Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getActivity(), MainNavigation.class));
                     }
                     else{

@@ -45,10 +45,10 @@ public class LoginTabFragment extends Fragment {
         String mail = email.getText().toString().trim();
         String pass = password.getText().toString().trim();
         if (mail.isEmpty()){
-            email.setError("Email can not be empty");
+            email.setError("");
         }
         if (pass.isEmpty()){
-            password.setError("Password can not be empty");
+            password.setError("");
         }
         else{
             mAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
