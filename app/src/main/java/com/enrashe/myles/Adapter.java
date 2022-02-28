@@ -75,7 +75,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         return eventos.size();
     }
 
-    public void generarColor(CardView cv){
+    public void generarColor(CardView cv) {
         Random rnd = new Random();
 
 

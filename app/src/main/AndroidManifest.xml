@@ -13,6 +13,11 @@
         android:roundIcon="@mipmap/ic_logo_app_round"
         android:supportsRtl="true">
         <activity
+            android:name=".Publicaciones"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight"
+            />
+        <activity
             android:name=".Chat"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight" />

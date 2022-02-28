@@ -18,14 +18,14 @@
             android:scaleType="centerCrop" />
 
         <TextView
+            android:id="@+id/evento"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Large Text"
-            android:id="@+id/evento"
-            android:layout_toRightOf="@+id/person_photo"
             android:layout_alignParentTop="true"
-            android:layout_marginLeft="10dp" />
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/person_photo"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/descripcion"
@@ -81,13 +81,13 @@
         </View>-->
 
         <ImageView
+            android:id="@+id/compartir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/compartir"
-            android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
-            android:src="@android:drawable/ic_menu_share"
-            android:background="@color/material_blue_grey_800" />
+            android:layout_alignParentBottom="true"
+            android:background="@color/material_blue_grey_800"
+            android:src="@android:drawable/ic_menu_share" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

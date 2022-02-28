@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/add"
+        android:contentDescription="@string/none"
+        android:icon="@drawable/home"
+        android:title="@string/me_gusta"
+        app:showAsAction="always" />
+    <item
         android:id="@+id/eventos"
         android:contentDescription="@string/none"
         android:icon="@drawable/iconomyles"
@@ -10,23 +16,16 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/add"
-        android:contentDescription="@string/none"
-        android:icon="@drawable/favoritos"
-        android:title="@string/me_gusta"
-        app:showAsAction="always" />
-
-    <item
         android:id="@+id/browse"
         android:contentDescription="@string/none"
-        android:icon="@drawable/ic_baseline_menu_24"
+        android:icon="@drawable/maps"
         android:title="@string/browse"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/personal"
         android:contentDescription="@string/none"
-        android:icon="@drawable/iconomyles"
+        android:icon="@drawable/chat"
         android:title="@string/personal"
         app:showAsAction="always" />
 

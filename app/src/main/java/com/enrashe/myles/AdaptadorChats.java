@@ -17,6 +17,7 @@ public class AdaptadorChats extends RecyclerView.Adapter<AdaptadorChats.MensajeH
         this.listadoMensajes = listadoMensajes;
     }
 
+
     @NonNull
     @Override
     public MensajeHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
@@ -29,6 +30,7 @@ public class AdaptadorChats extends RecyclerView.Adapter<AdaptadorChats.MensajeH
     public void onBindViewHolder(@NonNull MensajeHolder mensajeHolder, int position) {
         mensajeHolder.tvnom.setText(listadoMensajes.get(position).getNombre());
         mensajeHolder.tvmes.setText(listadoMensajes.get(position).getMensaje());
+
 
     }
 
@@ -45,6 +47,7 @@ public class AdaptadorChats extends RecyclerView.Adapter<AdaptadorChats.MensajeH
             super(itemView);
             tvmes = itemView.findViewById(R.id.tvmes);
             tvnom = itemView.findViewById(R.id.tvnom);
+
         }
     }
 

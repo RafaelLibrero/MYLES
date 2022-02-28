@@ -20,7 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginTabFragment extends Fragment {
 
     private Button blogin;
-    private EditText email,password;
+    private EditText email, password;
     private FirebaseAuth mAuth;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -41,25 +41,23 @@ public class LoginTabFragment extends Fragment {
 
     }
 
-    private void login(){
+    private void login() {
         String mail = email.getText().toString().trim();
         String pass = password.getText().toString().trim();
-        if (mail.isEmpty()){
+        if (mail.isEmpty()) {
             email.setError("");
         }
-        if (pass.isEmpty()){
+        if (pass.isEmpty()) {
             password.setError("");
-        }
-        else{
-            mAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        } else {
+            mAuth.signInWithEmailAndPassword(mail, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()){
-                        Toast.makeText(getActivity(),"Login Successful",Toast.LENGTH_SHORT).show();
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getActivity(), "Login Successful", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getActivity(), MainNavigation.class));
-                    }
-                    else{
-                        Toast.makeText(getActivity(),"Login Failed",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getActivity(), "Login Failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
