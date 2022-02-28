@@ -20,11 +20,11 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignupTabFragment extends Fragment {
 
     private Button bsignup;
-    private EditText username,email,password,repeatPassword;
+    private EditText username, email, password, repeatPassword;
     private FirebaseAuth mAuth;
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.signup_tab_fragment,container,false);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        ViewGroup root = (ViewGroup) inflater.inflate(R.layout.signup_tab_fragment, container, false);
 
         bsignup = root.findViewById(R.id.bsignup);
         username = root.findViewById(R.id.editTextTextPersonName);
@@ -42,33 +42,31 @@ public class SignupTabFragment extends Fragment {
         return root;
     }
 
-    private void signup(){
+    private void signup() {
         String user = username.getText().toString().trim();
         String mail = email.getText().toString().trim();
         String pass = password.getText().toString().trim();
         String repeatPass = repeatPassword.getText().toString().trim();
-        if (user.isEmpty()){
+        if (user.isEmpty()) {
             username.setError("");
         }
-        if (mail.isEmpty()){
+        if (mail.isEmpty()) {
             email.setError("");
         }
-        if (pass.isEmpty()){
+        if (pass.isEmpty()) {
             password.setError("");
         }
-        if (repeatPass.isEmpty()){
+        if (repeatPass.isEmpty()) {
             repeatPassword.setError("");
-        }
-        else{
-            mAuth.createUserWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        } else {
+            mAuth.createUserWithEmailAndPassword(mail, pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
-                    if (task.isSuccessful()){
-                        Toast.makeText(getActivity(),"Successfully registered",Toast.LENGTH_SHORT).show();
+                    if (task.isSuccessful()) {
+                        Toast.makeText(getActivity(), "Successfully registered", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(getActivity(), MainNavigation.class));
-                    }
-                    else{
-                        Toast.makeText(getActivity(),"Oops, something went wrong, try again",Toast.LENGTH_SHORT).show();
+                    } else {
+                        Toast.makeText(getActivity(), "Oops, something went wrong, try again", Toast.LENGTH_SHORT).show();
                     }
                 }
             });

@@ -2,10 +2,8 @@ package com.enrashe.myles;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
@@ -23,9 +21,14 @@ public class MainNavigation extends AppCompatActivity {
     private ActivityMainNavigationBinding binding;
     private MenuItem prevMenuItem;
 
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main_navigation);
+
 
         binding = ActivityMainNavigationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
@@ -66,17 +69,16 @@ public class MainNavigation extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
                 switch (item.getItemId()) {
-                    case R.id.eventos:
-                        item.setChecked(true);
-                        Intent intent = new Intent(MainNavigation.this, Eventos.class);
+                    case R.id.add:
+                        Intent intent = new Intent(MainNavigation.this, Publicaciones.class);
                         startActivity(intent);
-                        Toast.makeText(MainNavigation.this, "Eventos", Toast.LENGTH_SHORT).show();
                         removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(0);
                         break;
-                    case R.id.add:
+                    case R.id.eventos:
                         item.setChecked(true);
-                        Toast.makeText(MainNavigation.this, "Me gusta", Toast.LENGTH_SHORT).show();
+                        Intent intent1 = new Intent(MainNavigation.this, Eventos.class);
+                        startActivity(intent1);
                         removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(1);
                         break;
