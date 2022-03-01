@@ -26,8 +26,8 @@
     </style>
     <style name="Theme.MYLES.eventos" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/navyblue</item>
-        <item name="colorPrimaryVariant">@color/orange900</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/orange900</item>
@@ -38,7 +38,6 @@
         <!-- Customize your theme here. -->
         <item name="android:fontFamily">@font/varela</item>
         <item name="android:textColor">@color/navyblue</item>
-        <item name="android:backgroundTint">@color/orange600</item>
         <item name="cornerRadius">25dp</item>
     </style>
 

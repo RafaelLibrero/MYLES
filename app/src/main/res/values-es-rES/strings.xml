@@ -13,4 +13,6 @@
     <string name="browse">explorar</string>
     <string name="add">añadir</string>
     <string name="home">Inicio</string>
+    <string name="type_your_message_here">Escribe tu mensaje aquí</string>
+    <string name="type_your_username_here">Escribe tu nombre aquí</string>
 </resources>
