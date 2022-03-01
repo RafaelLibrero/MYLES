@@ -47,7 +47,7 @@ public class MainNavigation extends AppCompatActivity {
 
         bienvenidos.setText("Bivenido/a " + username + " a Myles");
 
-        textoDescriptivo.setText("Descubre nuestra forma sana de ocio y tiempo libre para realizar nuestras actividades. Busca y descubre ocio sano y libre:\n\nDescubre en:\n\n  Home\t  Myles\t  Mapa\t  Chat");
+        textoDescriptivo.setText("Descubre nuestra forma sana de ocio y tiempo libre para realizar nuestras actividades");
 
         bienvenidos = findViewById(R.id.bienvenida);
         Animation mylesAnimation = AnimationUtils.loadAnimation(this, R.anim.parpadeoinfinito);
