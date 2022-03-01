@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/add"
+        android:contentDescription="@string/none"
+        android:icon="@drawable/home"
+        android:title="@string/home"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/eventos"
+        android:contentDescription="@string/none"
+        android:icon="@drawable/iconomyles"
+        android:title="@string/eventos"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/browse"
+        android:contentDescription="@string/none"
+        android:icon="@drawable/maps"
+        android:title="@string/mapa"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/personal"
+        android:contentDescription="@string/none"
+        android:icon="@drawable/chat"
+        android:title="@string/chat"
+        app:showAsAction="always" />
+
+
+</menu>

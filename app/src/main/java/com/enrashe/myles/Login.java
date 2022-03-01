@@ -1,39 +1,42 @@
 package com.enrashe.myles;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class Login extends AppCompatActivity {
 
-    private Button blogin,bsignup1;
+    TabLayout tabLayout;
+    ViewPager2 viewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        blogin = findViewById(R.id.bregister);
-        bsignup1 = findViewById(R.id.bsignup1);
+        tabLayout = findViewById(R.id.tab_layout);
+        viewPager = findViewById(R.id.view_pager);
 
-        blogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, MainActivity.class);
-                startActivity(intent);
-            }
-        });
+        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 
-        bsignup1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Login.this, Signup.class);
-                startActivity(intent);
+        viewPager.setAdapter(new LoginAdapter(this));
+
+        new TabLayoutMediator(tabLayout, viewPager, (tab, position) -> {
+            switch (position) {
+                case 0:
+                    tab.setText(R.string.login);
+                    break;
+                case 1:
+                    tab.setText(R.string.signup);
+                    break;
             }
-        });
+        }).attach();
 
     }
+
+
 }

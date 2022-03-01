@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange300"
+    android:background="?attr/colorPrimary"
     tools:context=".Splash">
 
     <ImageView
@@ -26,10 +26,10 @@
         android:text="@string/es"
         android:textColor="@color/yellow"
         android:textSize="48sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintBottom_toBottomOf="@+id/imgvsplash"
+        app:layout_constraintEnd_toEndOf="@+id/imgvsplash"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="@+id/imgvsplash"
+        app:layout_constraintTop_toTopOf="@+id/imgvsplash"
+        app:layout_constraintVertical_bias="0.925" />
 </androidx.constraintlayout.widget.ConstraintLayout>
