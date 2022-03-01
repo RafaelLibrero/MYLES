@@ -38,7 +38,8 @@
         <activity
             android:name=".MapsActivity"
             android:exported="false"
-            android:label="@string/title_activity_maps" />
+            android:label="@string/title_activity_maps"
+            android:theme="@style/Theme.MYLES.eventos"/>
         <activity
             android:name=".Splash"
             android:exported="true"

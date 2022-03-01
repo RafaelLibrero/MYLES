@@ -45,7 +45,7 @@ public class MainNavigation extends AppCompatActivity {
         textoDescriptivo = findViewById(R.id.guiapp);
         bienvenidos = findViewById(R.id.bienvenida);
 
-        bienvenidos.setText("Bivenido/a " + username + " a Myles");
+        bienvenidos.setText("Bienvenido/a " + username + " a Myles");
 
         textoDescriptivo.setText("Descubre nuestra forma sana de ocio y tiempo libre para realizar nuestras actividades");
 
