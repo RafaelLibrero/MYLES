@@ -55,12 +55,18 @@ public class LoginTabFragment extends Fragment {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(getActivity(), "Login Successful", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getActivity(), MainNavigation.class));
+                        Intent logeado = new Intent(getActivity(), MainNavigation.class);
+                        logeado.putExtra("usernamelog", nombreUsuario(mail));
+                        startActivity(logeado);
                     } else {
                         Toast.makeText(getActivity(), "Login Failed", Toast.LENGTH_SHORT).show();
                     }
                 }
             });
         }
+    }
+
+    private String nombreUsuario(String mail) {
+        return mail.substring(0, 8);
     }
 }

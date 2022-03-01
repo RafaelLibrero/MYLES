@@ -3,23 +3,27 @@ package com.enrashe.myles;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.TextView;
 
-import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import com.enrashe.myles.databinding.ActivityMainNavigationBinding;
 import com.enrashe.myles.ui.main.SectionsPagerAdapter;
-import com.google.android.material.bottomnavigation.BottomNavigationItemView;
-import com.google.android.material.bottomnavigation.BottomNavigationMenuView;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainNavigation extends AppCompatActivity {
 
     private ActivityMainNavigationBinding binding;
     private MenuItem prevMenuItem;
+
+    private TextView bienvenidos, textoDescriptivo;
+    private Bundle nUser;
+
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +39,19 @@ public class MainNavigation extends AppCompatActivity {
         viewPager.setAdapter(sectionsPagerAdapter);
 
         BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
+
+        nUser = getIntent().getExtras();
+        username = nUser.getString("usernamelog");
+        textoDescriptivo = findViewById(R.id.guiapp);
+        bienvenidos = findViewById(R.id.bienvenida);
+
+        bienvenidos.setText("Bivenido/a " + username + " a Myles");
+
+        textoDescriptivo.setText("Descubre nuestra forma sana de ocio y tiempo libre para realizar nuestras actividades. Busca y descubre ocio sano y libre:\n\nDescubre en:\n\n  Home\t  Myles\t  Mapa\t  Chat");
+
+        bienvenidos = findViewById(R.id.bienvenida);
+        Animation mylesAnimation = AnimationUtils.loadAnimation(this, R.anim.parpadeoinfinito);
+        bienvenidos.startAnimation(mylesAnimation);
 
         mybottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
