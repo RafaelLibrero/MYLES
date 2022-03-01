@@ -21,46 +21,20 @@ public class MainNavigation extends AppCompatActivity {
     private ActivityMainNavigationBinding binding;
     private MenuItem prevMenuItem;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_navigation);
 
-
         binding = ActivityMainNavigationBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        //el adaptador coloca las Pages -los fragmentos con las diferentes vistas- dentro de la vista padre Viewpager del xml
         SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
 
         ViewPager viewPager = binding.viewPager;
         viewPager.setAdapter(sectionsPagerAdapter);
-//        TabLayout tabs = binding.tabs;
-//        tabs.setupWithViewPager(viewPager);
-//        FloatingActionButton fab = binding.fab;
-//
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
 
-
-// cast al xml
         BottomNavigationView mybottomNavView = findViewById(R.id.bottom_navigation);
-
-        // crear badges
-        BottomNavigationMenuView bottomNavigationMenuView =
-                (BottomNavigationMenuView) mybottomNavView.getChildAt(0);
-        View v = bottomNavigationMenuView.getChildAt(2);
-        BottomNavigationItemView itemView = (BottomNavigationItemView) v;
-
-        //LayoutInflater.from(this)
-        //        .inflate(R.layout.activity_splash, itemView, true);
-
 
         mybottomNavView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -97,9 +71,6 @@ public class MainNavigation extends AppCompatActivity {
                 return false;
             }
         });
-
-
-//        here we listen to viewpager moves and set navigations items checked or not
 
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
