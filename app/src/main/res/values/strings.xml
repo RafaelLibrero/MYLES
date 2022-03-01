@@ -12,9 +12,7 @@
     <string name="username">Username</string>
     <string name="repeat_password">Repeat password</string>
     <string name="browse">Browse</string>
-    <string name="personal">Personal</string>
     <string name="add">Add</string>
-    <string name="none">none</string>
     <string name="likes" translatable="false">Likes</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
@@ -25,8 +23,12 @@
     <string name="title_activity_main_navigation" translatable="false">MainNavigation</string>
     <string name="tab_text_1" translatable="false">Tab 1</string>
     <string name="tab_text_2" translatable="false">Tab 2</string>
-    <string name="eventos" translatable="false">eventos</string>
     <string name="me_gusta" translatable="false">Me gusta</string>
-    <string name="welcome_to_myles">Welcome to MYLES!</string>
-    <string name="title_activity_maps">MapsActivity</string>
+    <string name="welcome_to_myles" translatable="false">Welcome to MYLES!</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="chat" translatable="false">Chat</string>
+    <string name="mapa" translatable="false">Mapa</string>
+    <string name="home">Home</string>
+    <string name="none" translatable="false" />
+    <string name="eventos" translatable="false">Eventos</string>
 </resources>

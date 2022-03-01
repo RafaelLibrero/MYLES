@@ -6,7 +6,7 @@
         android:id="@+id/add"
         android:contentDescription="@string/none"
         android:icon="@drawable/home"
-        android:title="@string/me_gusta"
+        android:title="@string/home"
         app:showAsAction="always" />
     <item
         android:id="@+id/eventos"
@@ -19,14 +19,14 @@
         android:id="@+id/browse"
         android:contentDescription="@string/none"
         android:icon="@drawable/maps"
-        android:title="@string/browse"
+        android:title="@string/mapa"
         app:showAsAction="ifRoom" />
 
     <item
         android:id="@+id/personal"
         android:contentDescription="@string/none"
         android:icon="@drawable/chat"
-        android:title="@string/personal"
+        android:title="@string/chat"
         app:showAsAction="always" />
 
 

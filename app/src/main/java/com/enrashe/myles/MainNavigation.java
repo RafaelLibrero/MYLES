@@ -22,8 +22,6 @@ public class MainNavigation extends AppCompatActivity {
     private MenuItem prevMenuItem;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -12,4 +12,5 @@
     <string name="repeat_password">repita contraseña</string>
     <string name="browse">explorar</string>
     <string name="add">añadir</string>
+    <string name="home">Inicio</string>
 </resources>
