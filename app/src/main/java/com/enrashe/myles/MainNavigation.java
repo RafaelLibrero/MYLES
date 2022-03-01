@@ -70,29 +70,27 @@ public class MainNavigation extends AppCompatActivity {
                     case R.id.add:
                         Intent intent = new Intent(MainNavigation.this, Publicaciones.class);
                         startActivity(intent);
-                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(0);
                         break;
+
                     case R.id.eventos:
                         item.setChecked(true);
                         Intent intent1 = new Intent(MainNavigation.this, Eventos.class);
                         startActivity(intent1);
-                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(1);
                         break;
+
                     case R.id.browse:
                         item.setChecked(true);
                         Intent intent2 = new Intent(MainNavigation.this, MapsActivity.class);
                         startActivity(intent2);
-                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(2);
-
                         break;
+
                     case R.id.personal:
                         item.setChecked(true);
                         Intent intent3 = new Intent(MainNavigation.this, Chat.class);
                         startActivity(intent3);
-                        removeBadge(mybottomNavView, item.getItemId());
                         viewPager.setCurrentItem(3);
                         break;
                 }
@@ -118,7 +116,6 @@ public class MainNavigation extends AppCompatActivity {
                     mybottomNavView.getMenu().getItem(0).setChecked(false);
 
                 mybottomNavView.getMenu().getItem(position).setChecked(true);
-                removeBadge(mybottomNavView, mybottomNavView.getMenu().getItem(position).getItemId());
                 prevMenuItem = mybottomNavView.getMenu().getItem(position);
             }
 
@@ -128,13 +125,5 @@ public class MainNavigation extends AppCompatActivity {
             }
         });
 
-    }
-
-    //removing badges
-    public static void removeBadge(BottomNavigationView bottomNavigationView, @IdRes int itemId) {
-        BottomNavigationItemView itemView = bottomNavigationView.findViewById(itemId);
-        if (itemView.getChildCount() == 3) {
-            itemView.removeViewAt(2);
-        }
     }
 }
