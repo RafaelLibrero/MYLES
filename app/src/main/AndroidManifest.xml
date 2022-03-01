@@ -15,11 +15,11 @@
         <activity
             android:name=".Publicaciones"
             android:exported="true"
-            android:theme="@style/Theme.MYLES.Login" />
+            android:theme="@style/Theme.MYLES.eventos" />
         <activity
             android:name=".Chat"
             android:exported="true"
-            android:theme="@style/Theme.MYLES.Login" />
+            android:theme="@style/Theme.MYLES.eventos" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -58,11 +58,11 @@
             android:name=".MainNavigation"
             android:exported="false"
             android:label="@string/title_activity_main_navigation"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+            android:theme="@style/Theme.MYLES.eventos" />
         <activity
             android:name=".Eventos"
             android:exported="true"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+            android:theme="@style/Theme.MYLES.eventos" />
     </application>
 
 </manifest>

@@ -31,4 +31,6 @@
     <string name="home">Home</string>
     <string name="none" translatable="false" />
     <string name="eventos" translatable="false">Eventos</string>
+    <string name="type_your_message_here">Type your message here</string>
+    <string name="type_your_username_here">Type your username here</string>
 </resources>
